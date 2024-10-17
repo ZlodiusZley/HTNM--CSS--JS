@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: active;
+}
+
+.modal {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: active;
+}
+
+.modal_header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+img {
+    width: 20px;
+}
+
+.modal_form {
+    padding: 30px 10px 30px 10px;
+}
+
+.modal_name,.modal_surname {
+    width: 300px;
+    padding: 5px 10px;
+    border: solid;
+    border-radius: 5px;
+    border-color: darkgray;
+    display: block;
+}
+
+.modal_name{
+    margin-bottom: 15px;
+}
+
+
+.submit__button {
+    cursor: pointer;
+    border-radius: 10%;
+    background-color: black;
+    color: white;
+}
+
+.modal_submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
