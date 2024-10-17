@@ -35,7 +35,7 @@ submit__button.addEventListener("click", function(event) {
     } 
     else if(modal_name.value == '' || modal_surname.value == '') {
         result = confirm(question);
-        if (confirm == False) {
+        if (!result == False) {
             close();
         }
     } 
